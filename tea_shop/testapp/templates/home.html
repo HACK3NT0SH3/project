@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoSalon - Home</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="{% static 'img/911turbos_1.png' %}" class="card-img-top" alt="Car 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Porsche 911 Trubo S</h5>
+                        <p class="card-text">Культовый автомобиль от всемирноизвестной компании.</p>
+                        <a href="{% url 'car_detail' car_id=1 %}" class="btn btn-primary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="{% static 'img/eto_chto_m5_IPsZGoy_1.png' %}" class="card-img-top" alt="Car 2">
+                    <div class="card-body">
+                        <h5 class="card-title">BMW M3</h5>
+                        <p class="card-text">Легендарный автомобиль 3 серии с узнаваемым обвесом.</p>
+                        <a href="{% url 'car_detail' car_id=2 %}" class="btn btn-primary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="{% static 'img/audi_a5_9Mi5vAR_1.png' %}" class="card-img-top" alt="Car 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Audi A5</h5>
+                        <p class="card-text">Роскошный седан с современными технологиями от Ауди.</p>
+                        <a href="{% url 'car_detail' car_id=3 %}" class="btn btn-primary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
